@@ -1,0 +1,14 @@
+# Model checkpoints and generated weights
+models/checkpoints/
+
+# Python-generated files
+__pycache__/
+*.py[cod]
+
+# Local environments
+.venv/
+venv/
+env/
+
+# Project documentation / reports
+PROJECT_REPORT.md

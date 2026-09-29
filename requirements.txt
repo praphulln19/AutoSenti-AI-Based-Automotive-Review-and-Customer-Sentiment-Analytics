@@ -1,0 +1,12 @@
+# Runtime ML / NLP
+torch>=2.0.0
+transformers>=4.35.0
+pandas>=2.0.0
+
+# UI
+streamlit>=1.28.0
+plotly>=5.17.0
+kaleido>=0.2.1           # static PNG export for Plotly figures (1.4.0 installed)
+
+# Configuration
+pyyaml>=6.0.1
