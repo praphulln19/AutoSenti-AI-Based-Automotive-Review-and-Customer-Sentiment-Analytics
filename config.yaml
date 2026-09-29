@@ -1,0 +1,157 @@
+# ─────────────────────────────────────────────────────────
+#  config.yaml  –  Central configuration for ABSA system
+# ─────────────────────────────────────────────────────────
+
+# ── Automotive aspect taxonomy ─────────────────────────
+aspects:
+  - Vehicle
+  - Engine
+  - Battery
+  - Mileage
+  - Safety
+  - Comfort
+  - Service
+  - Infotainment
+  - Price
+
+# ── Sentiment labels ───────────────────────────────────
+sentiment_labels:
+  - Positive
+  - Negative
+  - Neutral
+
+# ── Aspect keyword map (used by keyword-based extractor)
+aspect_keywords:
+  Vehicle:
+    - vehicle
+    - car
+    - automobile
+    - suv
+    - sedan
+    - truck
+    - hatchback
+    - build quality
+    - design
+    - exterior
+    - interior
+    - body
+    - looks
+    - style
+  Engine:
+    - engine
+    - motor
+    - horsepower
+    - hp
+    - torque
+    - acceleration
+    - power
+    - rpm
+    - cylinder
+    - turbo
+    - turbocharged
+    - performance
+  Battery:
+    - battery
+    - ev battery
+    - charge
+    - charged
+    - charging
+    - range
+    - electric range
+    - battery life
+    - battery capacity
+    - kwh
+  Mileage:
+    - mileage
+    - fuel economy
+    - fuel efficiency
+    - mpg
+    - kmpl
+    - gas mileage
+    - consumption
+    - efficiency
+  Safety:
+    - safety
+    - airbag
+    - airbags
+    - abs
+    - brake
+    - brakes
+    - braking
+    - ncap
+    - collision
+    - lane assist
+    - parking sensor
+    - blind spot
+    - crash
+    - secure
+  Comfort:
+    - comfort
+    - comfortable
+    - seat
+    - seats
+    - legroom
+    - ride quality
+    - smooth
+    - noise
+    - vibration
+    - cabin
+    - spacious
+    - space
+    - lumbar
+    - ergonomic
+  Service:
+    - service
+    - servicing
+    - dealership
+    - dealer
+    - maintenance
+    - support
+    - customer service
+    - warranty
+    - after-sales
+    - staff
+    - technician
+    - repair
+  Infotainment:
+    - infotainment
+    - touchscreen
+    - display
+    - screen
+    - navigation
+    - gps
+    - bluetooth
+    - android auto
+    - apple carplay
+    - audio
+    - sound system
+    - speakers
+    - connectivity
+    - usb
+    - wireless
+  Price:
+    - price
+    - cost
+    - expensive
+    - affordable
+    - cheap
+    - value
+    - value for money
+    - pricing
+    - budget
+    - worth
+
+# ── Model configuration ────────────────────────────────
+models:
+  bert:
+    name: bert-base-uncased
+    display_name: "BERT (bert-base-uncased)"
+    max_length: 256
+    num_labels: 3
+
+  xlmr:
+    name: xlm-roberta-base
+    display_name: "XLM-RoBERTa (xlm-roberta-base)"
+    max_length: 256
+    num_labels: 3
+
