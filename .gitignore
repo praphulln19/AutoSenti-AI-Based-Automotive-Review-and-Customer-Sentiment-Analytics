@@ -11,4 +11,11 @@ venv/
 env/
 
 # Project documentation / reports
-PROJECT_REPORT.md
+PROJECT_REPORT.md
+
+# Log files
+*.log
+models/*.log
+training.log
+finetune.log
+
